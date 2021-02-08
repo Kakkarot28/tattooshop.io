@@ -1,0 +1,37 @@
+@mixin h1_style {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: $head_font;
+  font-weight: normal;
+  padding: 1em 0;
+}
+
+@mixin before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: $transition_one;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: $head_font;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+@mixin beforeHover {
+  transform: translateX(0%);
+  opacity: 1;
+}

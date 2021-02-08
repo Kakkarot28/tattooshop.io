@@ -1,0 +1,824 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap");
+
+@import "variable";
+@import "mixins";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $base_font;
+  font-size: 10px;
+  color: $main_color;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3.5rem 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 122.5rem;
+  margin: 0 auto;
+  padding: 0 2.3rem;
+}
+
+//-----------ROOT ENDS HERE-----------
+
+//-----------NAV STARTS HERE-----------
+nav {
+  width: 100%;
+  padding: 0 1.5em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: black;
+  z-index: 1;
+  //-----------navbar starts HERE-----------
+
+  .navbar {
+    width: 100%;
+    max-width: 122.5rem !important;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .full_nav_one {
+      width: 30%;
+      //-----------logo starts HERE-----------
+      .logo {
+        width: 100%;
+        h1 {
+          a {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: $head_font;
+            letter-spacing: 1.6px;
+            word-spacing: 2px;
+            color: $main_color;
+          }
+        }
+      }
+      //-----------mob_bar_cont starts HERE-----------
+      .mob_bar_cont {
+        display: none;
+      }
+    }
+    //-----------centered_cont starts HERE-----------
+    .full_nav_two {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .centered_cont {
+        width: 70%;
+        padding: 1.5em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #close {
+          display: none;
+        }
+        .time_cont,
+        .phone_cont {
+          padding: 0 1.5em;
+          h1 {
+            font-size: 1.6rem;
+            letter-spacing: 1.5px;
+            line-height: 2.4rem;
+            font-weight: normal;
+          }
+        }
+      }
+      .bookin_btn {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a {
+          font-size: 1.2rem;
+          color: $main_color;
+          text-transform: capitalize;
+          letter-spacing: 1.5px;
+          border: 1px solid $main_color;
+          padding: 1em 2em;
+          font-weight: bold;
+          transition: $transition;
+          &:hover {
+            background: $main_color;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+//-----------MAIN STARTS HERE-----------
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .banner {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    h1 {
+      text-transform: uppercase;
+      font-family: $head_font;
+      font-size: 7.2rem;
+      word-spacing: 15px;
+      letter-spacing: 1.25rem;
+      text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+//-----------ABOUT US STARTS HERE-----------
+
+.about_us_sec {
+  width: 100%;
+  background: $one_bg;
+  .about_us {
+    padding-bottom: 2.5em;
+    h1 {
+      @include h1_style;
+    }
+    .about_info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .about_img {
+        width: 50%;
+        padding: 0.3em;
+      }
+      .about_txt {
+        width: 50%;
+        padding: 3em;
+        text-align: end;
+        h2 {
+          font-size: 2.4rem;
+          letter-spacing: 1px;
+          word-spacing: 2px;
+          font-family: $head_font;
+          text-transform: capitalize;
+          font-weight: normal;
+          padding-bottom: 1em;
+        }
+        p {
+          line-height: 2.4rem;
+          letter-spacing: 1px;
+          word-spacing: 1.5px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+//-----------WHAT WE DO STARTS HERE-----------
+
+.what_we_do {
+  width: 100%;
+  background: $two_bg;
+  .what_we {
+    h1 {
+      @include h1_style;
+    }
+    .what_imgs {
+      display: grid;
+      padding: 0 1.5rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      align-items: stretch;
+    }
+  }
+}
+//--------------BEFORE EFFECT first_one-------------
+#first_one {
+  position: relative;
+  display: block;
+  transition: $transition;
+}
+#first_one:before {
+  content: "Tattooing";
+  @include before;
+}
+#first_one:hover:before {
+  @include beforeHover;
+}
+//--------------BEFORE EFFECT second_one-------------
+#second_one {
+  position: relative;
+  display: block;
+  transition: $transition;
+}
+#second_one:before {
+  content: "piercing";
+  @include before;
+}
+#second_one:hover:before {
+  @include beforeHover;
+}
+//--------------BEFORE EFFECT third_one-------------
+#third_one {
+  position: relative;
+  display: grid;
+  align-items: stretch;
+  transition: $transition;
+}
+#third_one:before {
+  content: "Laser removal";
+  @include before;
+}
+#third_one:hover:before {
+  @include beforeHover;
+}
+//--------------BEFORE EFFECT fourth_one-------------
+#fourth_one {
+  position: relative;
+  display: block;
+  transition: $transition;
+}
+#fourth_one:before {
+  content: "Tattoo cover up";
+  @include before;
+}
+#fourth_one:hover:before {
+  @include beforeHover;
+}
+
+//-----------OUR ARTISTS STARTS HERE-----------
+
+.our_artist {
+  width: 100%;
+  background: $one_bg;
+  .artists {
+    padding: 1em 0;
+    h1 {
+      @include h1_style;
+    }
+    .artist_cards {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .art_card {
+        width: 280px;
+        background: $main_color;
+        color: #000000;
+        text-align: center;
+        margin: 1.5rem;
+        .art_card_img {
+          width: 100%;
+        }
+        .art_card_text {
+          padding: 2rem 3rem;
+          h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 1.5px;
+            padding-bottom: 1.3rem;
+            font-family: $head_font;
+          }
+          h5 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            padding-bottom: 1.3rem;
+            font-weight: normal;
+          }
+
+          .card_icons {
+            width: 100%;
+            padding-top: 1.3rem;
+            ion-icon {
+              font-size: 2.2rem;
+              color: silver;
+              margin: 0 0.2em;
+              transition: $transition;
+              &:hover {
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//-----------OUR WOKS STARTS HERE-----------
+
+.our_work {
+  width: 100%;
+  background: $two_bg;
+  h1 {
+    @include h1_style;
+  }
+  .work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    div {
+      display: grid;
+      align-items: stretch;
+    }
+  }
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight {
+  position: relative;
+  display: block;
+  transition: $transition;
+}
+
+.one:before {
+  content: "Old School tattoo";
+  @include before;
+}
+.two:before {
+  content: "your ideas";
+  @include before;
+}
+.three:before {
+  content: "tribal";
+  @include before;
+}
+.four:before {
+  content: "black work";
+  @include before;
+}
+.five:before {
+  content: "neo traditional tattoo";
+  @include before;
+}
+.six:before {
+  content: "lettering";
+  @include before;
+}
+.seven:before {
+  content: "dot work";
+  @include before;
+}
+.eight:before {
+  content: "patterns";
+  @include before;
+}
+
+.one:hover:before {
+  @include beforeHover;
+}
+.two:hover:before {
+  @include beforeHover;
+}
+.three:hover:before {
+  @include beforeHover;
+}
+.four:hover:before {
+  @include beforeHover;
+}
+.five:hover:before {
+  @include beforeHover;
+}
+.six:hover:before {
+  @include beforeHover;
+}
+.seven:hover:before {
+  @include beforeHover;
+}
+.eight:hover:before {
+  @include beforeHover;
+}
+
+//--------------Prices------------
+.prices {
+  width: 100%;
+  background: $one_bg;
+  padding-bottom: 10rem;
+  .price_table {
+    h1 {
+      @include h1_style;
+    }
+    .cost_tab {
+      width: 85%;
+      margin: 0 auto;
+      background: url(../images/cover.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8),
+        -5px 1px 8px rgba(0, 0, 0, 0.8), 0px 8px 10px rgba(0, 0, 0, 0.8),
+        0 10px 13px rgba(0, 0, 0, 0.8);
+      table {
+        width: 101%;
+        padding: 0.5em 1em;
+        background: rgba(0, 0, 0, 0.85555555);
+
+        tr {
+          th {
+            padding: 1.5em 0;
+            text-align: start;
+            text-transform: uppercase;
+            font-family: $head_font;
+            letter-spacing: 3.5px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            border-bottom: 1.5px solid white;
+          }
+          td {
+            padding: 1em 0;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+//---------------------Contacts--------------------
+
+.contacts {
+  width: 100%;
+  background: $two_bg;
+  .contact_us {
+    h1 {
+      @include h1_style;
+    }
+    .contacts_cont {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      ion-icon {
+        font-size: 5rem;
+        padding-bottom: 2.5rem;
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        padding: 0.15rem;
+      }
+    }
+  }
+}
+
+//---------------------follow_us--------------------
+
+.follow_us {
+  width: 100%;
+  background: $one_bg;
+  .follow {
+    h1 {
+      @include h1_style;
+    }
+    .follow_icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ion-icon {
+        font-size: 2.3rem;
+        display: block;
+        padding: 1rem;
+        margin: 0.5em;
+        border: 1px solid $main_color;
+        border-radius: 50%;
+        transition: $transition;
+        &:hover {
+          transform: scale(1.2);
+          box-shadow: 0 0 15px black;
+        }
+      }
+    }
+  }
+}
+
+//---------------------Address--------------------
+
+.address {
+  width: 100%;
+  background: $two_bg;
+  .addr {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    .addr_text {
+      width: 50%;
+      padding: 1.5em;
+      h1 {
+        font-size: 2.4rem;
+        font-family: $head_font;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: normal;
+        padding-bottom: 0.5em;
+      }
+      address {
+        font-size: 1.5rem;
+        word-spacing: 1px;
+        padding-bottom: 0.3em;
+        line-height: 2rem;
+        font-weight: normal;
+      }
+      p {
+        font-size: 1.6rem;
+        word-spacing: 1px;
+        padding-bottom: 1em;
+        letter-spacing: 1.5px;
+      }
+
+      a {
+        font-size: 1.5rem;
+        word-spacing: 1px;
+        letter-spacing: 1.5px;
+        font-weight: normal;
+        font-family: $head_font;
+        color: $main_color;
+        transition: $transition;
+        &:hover {
+          color: rgb(197, 197, 197);
+        }
+      }
+    }
+  }
+}
+
+//----------------FOOTER------------
+
+footer {
+  width: 100%;
+  background: $one_bg;
+  text-align: center;
+  padding: 3em;
+  p {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+}
+
+@media (max-width: 930px) {
+  html {
+    font-size: 60.5%;
+  }
+
+  main {
+    .banner {
+      h1 {
+        font-size: 6.2rem;
+        word-spacing: 13px;
+        letter-spacing: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 905px) {
+  nav {
+    //-----------navbar starts HERE-----------
+    .navbar {
+      .full_nav_one {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        //-----------logo starts HERE-----------
+        .logo {
+          width: 50%;
+        }
+        //-----------mob_bar_cont starts HERE-----------
+        .mob_bar_cont {
+          width: 50%;
+          display: block;
+          text-align: right;
+
+          ion-icon {
+            font-size: 5rem;
+            text-align: right;
+          }
+        }
+      }
+      //-----------centered_cont starts HERE-----------
+      .full_nav_two {
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: absolute;
+        background: #000000;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        padding-left: 3.5rem;
+        transform: translateX(100%);
+        overflow-x: hidden;
+        transition: $transition;
+        .centered_cont {
+          margin-top: 1rem;
+          margin-bottom: 2.5rem;
+          width: 100%;
+          display: block;
+          #close {
+            display: block;
+            font-size: 5rem;
+            transition: $transition;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+          .time_cont {
+            margin-top: 6rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+        .bookin_btn {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  //----------what we do----------------
+  .what_we_do {
+    .what_we {
+      .what_imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2.5rem;
+      }
+    }
+  }
+
+  .our_work {
+    .work {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  html {
+    font-size: 58.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55.5%;
+  }
+
+  //--------------Prices------------
+  .prices {
+    .price_table {
+      .cost_tab {
+        width: 98%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
+  .about_us_sec {
+    width: 100%;
+    .about_us {
+      .about_info {
+        display: block;
+        .about_img {
+          width: 98%;
+          margin: 0 auto;
+        }
+        .about_txt {
+          margin: 0 auto;
+          width: 98%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  #map_sty {
+    height: 350px;
+    width: 100%;
+  }
+
+  .what_we_do {
+    .what_we {
+      .what_imgs {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
+      }
+    }
+  }
+
+  .our_work {
+    .work {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  }
+
+  //---------------------Contacts--------------------
+
+  .contacts {
+    width: 100%;
+    background: $two_bg;
+    .contact_us {
+      h1 {
+        @include h1_style;
+      }
+      .contacts_cont {
+        display: block;
+        margin: 0 auto;
+        .location,
+        .phone,
+        .clock {
+          width: 100%;
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+
+  //---------------------follow_us--------------------
+
+  .follow_us {
+    .follow {
+      .follow_icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        ion-icon {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 385px) {
+  main {
+    .banner {
+      h1 {
+        font-size: 5.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,1230 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3.5rem 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 122.5rem;
+  margin: 0 auto;
+  padding: 0 2.3rem;
+}
+
+nav {
+  width: 100%;
+  padding: 0 1.5em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: black;
+  z-index: 1;
+}
+
+nav .navbar {
+  width: 100%;
+  max-width: 122.5rem !important;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navbar .full_nav_one {
+  width: 30%;
+}
+
+nav .navbar .full_nav_one .logo {
+  width: 100%;
+}
+
+nav .navbar .full_nav_one .logo h1 a {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1.6px;
+  word-spacing: 2px;
+  color: #ffffff;
+}
+
+nav .navbar .full_nav_one .mob_bar_cont {
+  display: none;
+}
+
+nav .navbar .full_nav_two {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navbar .full_nav_two .centered_cont {
+  width: 70%;
+  padding: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navbar .full_nav_two .centered_cont #close {
+  display: none;
+}
+
+nav .navbar .full_nav_two .centered_cont .time_cont,
+nav .navbar .full_nav_two .centered_cont .phone_cont {
+  padding: 0 1.5em;
+}
+
+nav .navbar .full_nav_two .centered_cont .time_cont h1,
+nav .navbar .full_nav_two .centered_cont .phone_cont h1 {
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  line-height: 2.4rem;
+  font-weight: normal;
+}
+
+nav .navbar .full_nav_two .bookin_btn {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navbar .full_nav_two .bookin_btn a {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  border: 1px solid #ffffff;
+  padding: 1em 2em;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .navbar .full_nav_two .bookin_btn a:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../images/bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main .banner {
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+main .banner h1 {
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-size: 7.2rem;
+  word-spacing: 15px;
+  letter-spacing: 1.25rem;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.8);
+}
+
+.about_us_sec {
+  width: 100%;
+  background: #232323;
+}
+
+.about_us_sec .about_us {
+  padding-bottom: 2.5em;
+}
+
+.about_us_sec .about_us h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  padding: 1em 0;
+}
+
+.about_us_sec .about_us .about_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_us_sec .about_us .about_info .about_img {
+  width: 50%;
+  padding: 0.3em;
+}
+
+.about_us_sec .about_us .about_info .about_txt {
+  width: 50%;
+  padding: 3em;
+  text-align: end;
+}
+
+.about_us_sec .about_us .about_info .about_txt h2 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  font-weight: normal;
+  padding-bottom: 1em;
+}
+
+.about_us_sec .about_us .about_info .about_txt p {
+  line-height: 2.4rem;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  text-transform: capitalize;
+}
+
+.what_we_do {
+  width: 100%;
+  background: #494949;
+}
+
+.what_we_do .what_we h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  padding: 1em 0;
+}
+
+.what_we_do .what_we .what_imgs {
+  display: -ms-grid;
+  display: grid;
+  padding: 0 1.5rem;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#first_one {
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#first_one:before {
+  content: "Tattooing";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#first_one:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+#second_one {
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#second_one:before {
+  content: "piercing";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#second_one:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+#third_one {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#third_one:before {
+  content: "Laser removal";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#third_one:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+#fourth_one {
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#fourth_one:before {
+  content: "Tattoo cover up";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#fourth_one:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.our_artist {
+  width: 100%;
+  background: #232323;
+}
+
+.our_artist .artists {
+  padding: 1em 0;
+}
+
+.our_artist .artists h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  padding: 1em 0;
+}
+
+.our_artist .artists .artist_cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our_artist .artists .artist_cards .art_card {
+  width: 280px;
+  background: #ffffff;
+  color: #000000;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.our_artist .artists .artist_cards .art_card .art_card_img {
+  width: 100%;
+}
+
+.our_artist .artists .artist_cards .art_card .art_card_text {
+  padding: 2rem 3rem;
+}
+
+.our_artist .artists .artist_cards .art_card .art_card_text h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  padding-bottom: 1.3rem;
+  font-family: "Playfair Display", serif;
+}
+
+.our_artist .artists .artist_cards .art_card .art_card_text h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  padding-bottom: 1.3rem;
+  font-weight: normal;
+}
+
+.our_artist .artists .artist_cards .art_card .art_card_text .card_icons {
+  width: 100%;
+  padding-top: 1.3rem;
+}
+
+.our_artist .artists .artist_cards .art_card .art_card_text .card_icons ion-icon {
+  font-size: 2.2rem;
+  color: silver;
+  margin: 0 0.2em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.our_artist .artists .artist_cards .art_card .art_card_text .card_icons ion-icon:hover {
+  color: #000000;
+}
+
+.our_work {
+  width: 100%;
+  background: #494949;
+}
+
+.our_work h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  padding: 1em 0;
+}
+
+.our_work .work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.our_work .work div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight {
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.one:before {
+  content: "Old School tattoo";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.two:before {
+  content: "your ideas";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.three:before {
+  content: "tribal";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.four:before {
+  content: "black work";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.five:before {
+  content: "neo traditional tattoo";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.six:before {
+  content: "lettering";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.seven:before {
+  content: "dot work";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.eight:before {
+  content: "patterns";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.one:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.two:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.three:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.four:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.five:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.six:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.seven:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.eight:hover:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.prices {
+  width: 100%;
+  background: #232323;
+  padding-bottom: 10rem;
+}
+
+.prices .price_table h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  padding: 1em 0;
+}
+
+.prices .price_table .cost_tab {
+  width: 85%;
+  margin: 0 auto;
+  background: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8), -5px 1px 8px rgba(0, 0, 0, 0.8), 0px 8px 10px rgba(0, 0, 0, 0.8), 0 10px 13px rgba(0, 0, 0, 0.8);
+          box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8), -5px 1px 8px rgba(0, 0, 0, 0.8), 0px 8px 10px rgba(0, 0, 0, 0.8), 0 10px 13px rgba(0, 0, 0, 0.8);
+}
+
+.prices .price_table .cost_tab table {
+  width: 101%;
+  padding: 0.5em 1em;
+  background: rgba(0, 0, 0, 0.855556);
+}
+
+.prices .price_table .cost_tab table tr th {
+  padding: 1.5em 0;
+  text-align: start;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 3.5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 1.5px solid white;
+}
+
+.prices .price_table .cost_tab table tr td {
+  padding: 1em 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.contacts {
+  width: 100%;
+  background: #494949;
+}
+
+.contacts .contact_us h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  padding: 1em 0;
+}
+
+.contacts .contact_us .contacts_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contacts .contact_us .contacts_cont ion-icon {
+  font-size: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+.contacts .contact_us .contacts_cont p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 0.15rem;
+}
+
+.follow_us {
+  width: 100%;
+  background: #232323;
+}
+
+.follow_us .follow h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  padding: 1em 0;
+}
+
+.follow_us .follow .follow_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.follow_us .follow .follow_icons ion-icon {
+  font-size: 2.3rem;
+  display: block;
+  padding: 1rem;
+  margin: 0.5em;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.follow_us .follow .follow_icons ion-icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+
+.address {
+  width: 100%;
+  background: #494949;
+}
+
+.address .addr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.address .addr .addr_text {
+  width: 50%;
+  padding: 1.5em;
+}
+
+.address .addr .addr_text h1 {
+  font-size: 2.4rem;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding-bottom: 0.5em;
+}
+
+.address .addr .addr_text address {
+  font-size: 1.5rem;
+  word-spacing: 1px;
+  padding-bottom: 0.3em;
+  line-height: 2rem;
+  font-weight: normal;
+}
+
+.address .addr .addr_text p {
+  font-size: 1.6rem;
+  word-spacing: 1px;
+  padding-bottom: 1em;
+  letter-spacing: 1.5px;
+}
+
+.address .addr .addr_text a {
+  font-size: 1.5rem;
+  word-spacing: 1px;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.address .addr .addr_text a:hover {
+  color: #c5c5c5;
+}
+
+footer {
+  width: 100%;
+  background: #232323;
+  text-align: center;
+  padding: 3em;
+}
+
+footer p {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+@media (max-width: 930px) {
+  html {
+    font-size: 60.5%;
+  }
+  main .banner h1 {
+    font-size: 6.2rem;
+    word-spacing: 13px;
+    letter-spacing: 1.1rem;
+  }
+}
+
+@media (max-width: 905px) {
+  nav .navbar .full_nav_one {
+    width: 100%;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .navbar .full_nav_one .logo {
+    width: 50%;
+  }
+  nav .navbar .full_nav_one .mob_bar_cont {
+    width: 50%;
+    display: block;
+    text-align: right;
+  }
+  nav .navbar .full_nav_one .mob_bar_cont ion-icon {
+    font-size: 5rem;
+    text-align: right;
+  }
+  nav .navbar .full_nav_two {
+    width: 60%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    background: #000000;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    padding-left: 3.5rem;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    overflow-x: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .navbar .full_nav_two .centered_cont {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    display: block;
+  }
+  nav .navbar .full_nav_two .centered_cont #close {
+    display: block;
+    font-size: 5rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .navbar .full_nav_two .centered_cont #close:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  nav .navbar .full_nav_two .centered_cont .time_cont {
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+  }
+  nav .navbar .full_nav_two .bookin_btn {
+    width: 100%;
+    display: block;
+  }
+  .what_we_do .what_we .what_imgs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+  }
+  .our_work .work {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 830px) {
+  html {
+    font-size: 58.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55.5%;
+  }
+  .prices .price_table .cost_tab {
+    width: 98%;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
+  .about_us_sec {
+    width: 100%;
+  }
+  .about_us_sec .about_us .about_info {
+    display: block;
+  }
+  .about_us_sec .about_us .about_info .about_img {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .about_us_sec .about_us .about_info .about_txt {
+    margin: 0 auto;
+    width: 98%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  #map_sty {
+    height: 350px;
+    width: 100%;
+  }
+  .what_we_do .what_we .what_imgs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+  }
+  .our_work .work {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .contacts {
+    width: 100%;
+    background: #494949;
+  }
+  .contacts .contact_us h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 4.4rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    padding: 1em 0;
+  }
+  .contacts .contact_us .contacts_cont {
+    display: block;
+    margin: 0 auto;
+  }
+  .contacts .contact_us .contacts_cont .location,
+  .contacts .contact_us .contacts_cont .phone,
+  .contacts .contact_us .contacts_cont .clock {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  .follow_us .follow .follow_icons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  .follow_us .follow .follow_icons ion-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 385px) {
+  main .banner h1 {
+    font-size: 5.2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
